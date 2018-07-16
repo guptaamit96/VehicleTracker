@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nv_metro_img"
+        android:icon="@drawable/ic_train_black_24dp"
+        android:title="Metro" />
+
+    <item
+        android:id="@+id/nv_taxi_img"
+        android:icon="@drawable/ic_local_taxi_black"
+        android:title="Taxi" />
+
+    <item
+        android:id="@+id/nv_bus_img"
+        android:icon="@drawable/ic_directions_bus_black_24dp"
+        android:title="Bus" />
+
+    <item
+        android:id="@+id/nv_auto_img"
+        android:icon="@drawable/ic_local_taxi_black"
+        android:title="Auto" />
+
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_cab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Cabs"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/v_mp"
+        android:layout_below="@+id/tool_cab"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_below="@+id/v_mp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"/>
+
+    <LinearLayout
+        android:id="@+id/CurrentLocation"
+        android:layout_below="@+id/v_mp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/green_location" />
+
+
+
+        <TextView
+
+            android:layout_marginStart="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/current_address_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/corner"
+            android:hint="Your Location"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/red_location"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/pick_up_Location"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/corner"
+            android:hint="Drop Location"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_taxim"
+        android:layout_below="@+id/map"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_taxi_uber"
+                android:background="@drawable/corner"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="68dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_taxiuber_viw"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="UBER"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_taxi_ola"
+                android:layout_toRightOf="@+id/ll_taxi_uber"
+                android:background="@drawable/corner"
+                android:layout_width="120dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tv_taxiola_viw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="OLA"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    <View
+        android:layout_below="@+id/rl_taxim"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/rl_taxim"
+        android:id="@+id/fl_taxi_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

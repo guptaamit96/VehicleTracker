@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_taxiola"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/id_cr_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/car"
+                />
+            <TextView
+                android:id="@+id/tv_taxiola_dis"
+                android:layout_toEndOf="@+id/id_cr_img"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/tv_txola_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="rs 15-25"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/tv_txola_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:text="8 mins"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+
+</LinearLayout>
